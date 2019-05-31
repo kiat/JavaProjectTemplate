@@ -1,0 +1,4 @@
+script:
+  - mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn clean compile assembly:single
+  - mvn findbugs:findbugs
