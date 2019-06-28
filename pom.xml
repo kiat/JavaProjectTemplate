@@ -14,10 +14,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<checkstyle.version>[8.18,)</checkstyle.version>
-		<checkstyle.plugin.version>2.17</checkstyle.plugin.version>
+		<checkstyle.plugin.version>3.1.0</checkstyle.plugin.version>
 		<sevntu.checkstyle.plugin.version>1.29.0</sevntu.checkstyle.plugin.version>
 	</properties>
-
 
 	<reporting>
 		<plugins>
@@ -105,15 +104,21 @@
 						<version>${sevntu.checkstyle.plugin.version}</version>
 					</dependency>
 				</dependencies>
-				<!-- Specifying configuration here will take effect on the execution 
-					of "mvn checkstyle:checkstyle", but will not take effect on the execution 
+				<!-- Specifying configuration here will take effect on the execution
+					of "mvn checkstyle:checkstyle", but will not take effect on the execution
 					of "mvn site" -->
 				<configuration>
 					<configLocation>config/google_checks.xml</configLocation>
 					<failOnViolation>false</failOnViolation>
 					<consoleOutput>true</consoleOutput>
+
 				</configuration>
+
+
 			</plugin>
+
+
+
 
 
 			<plugin>
@@ -121,7 +126,7 @@
 				<artifactId>findbugs-maven-plugin</artifactId>
 				<version>3.0.5</version>
 				<configuration>
-					<!-- Enables analysis which takes more memory but finds more bugs. If 
+					<!-- Enables analysis which takes more memory but finds more bugs. If
 						you run out of memory, changes the value of the effort element to 'Low'. -->
 					<effort>Max</effort>
 					<!-- Build doesn't fail if problems are found -->
@@ -167,6 +172,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-	
+
 	</dependencies>
 </project>
