@@ -31,9 +31,7 @@ mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j
 
 We recommand the above command for running the project. 
 
-OR you can run the following command. 
-
-
+Alternativly, you can run the following command. It will generate a single jar file with all of the dependencies. 
 
 ```bash
 mvn clean compile assembly:single
@@ -59,6 +57,20 @@ or
 ```bash
 mvn findbugs:findbugs
 ```
+
+To generate the findbugs report use the following command
+
+```bash
+mvn test site 
+```
+
+For more info about FindBugs see 
+
+http://findbugs.sourceforge.net/
+
+And about Maven Findbug plugin see 
+https://gleclaire.github.io/findbugs-maven-plugin/index.html
+
 
 # Run Checkstyle 
 
