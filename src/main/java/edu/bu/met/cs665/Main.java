@@ -2,6 +2,7 @@ package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.example1.Person;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class Main {
 
@@ -14,6 +15,12 @@ public class Main {
    * @param args not used
    */
   public static void main(String[] args) {
+	  
+	// This configuration is for setting up the log4j properties file. 
+	// It is better to set this using java program arguments. 
+	PropertyConfigurator.configure("log4j.properties");
+	
+	// Let us create an object of the Main class. 
     Main m = new Main();
 
     logger.info(m.doIt());
