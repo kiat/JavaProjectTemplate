@@ -29,8 +29,15 @@ mvn clean compile assembly:single
 mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
 ```
 
+We recommand the above command for running the project. 
+
+OR you can run the following command. 
+
+
 
 ```bash
+mvn clean compile assembly:single
+
 java -Dlog4j.configuration=file:log4j.properties -classpath target/Example-1-1.0-SNAPSHOT-jar-with-dependencies.jar edu.bu.met.cs665.Main
 ```
 
