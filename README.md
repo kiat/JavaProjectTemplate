@@ -58,11 +58,6 @@ or
 mvn findbugs:findbugs
 ```
 
-To generate the findbugs report use the following command
-
-```bash
-mvn test site 
-```
 
 For more info about FindBugs see 
 
@@ -71,6 +66,10 @@ http://findbugs.sourceforge.net/
 And about Maven Findbug plugin see 
 https://gleclaire.github.io/findbugs-maven-plugin/index.html
 
+
+You can install Findbugs Eclipse Plugin 
+
+http://findbugs.sourceforge.net/manual/eclipse.html
 
 # Run Checkstyle 
 
