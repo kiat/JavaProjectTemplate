@@ -71,6 +71,11 @@ You can install Findbugs Eclipse Plugin
 
 http://findbugs.sourceforge.net/manual/eclipse.html
 
+
+
+SpotBugs https://spotbugs.github.io/ is the spiritual successor of FindBugs.
+
+
 # Run Checkstyle 
 
 CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. 
