@@ -40,6 +40,14 @@ java -Dlog4j.configuration=file:log4j.properties -classpath target/Example-1-1.0
 ```
 
 
+# Run all the unit test classes.
+
+
+```bash
+mvn clean compile test
+
+```
+
 # Using Findbugs 
 
 To see bug detail using the Findbugs GUI, use the following command "mvn findbugs:gui"
