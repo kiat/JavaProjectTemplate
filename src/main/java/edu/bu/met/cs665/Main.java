@@ -16,11 +16,11 @@ public class Main {
    */
   public static void main(String[] args) {
 	  
-	// This configuration is for setting up the log4j properties file. 
-	// It is better to set this using java program arguments. 
-	PropertyConfigurator.configure("log4j.properties");
+    // This configuration is for setting up the log4j properties file. 
+    // It is better to set this using java program arguments. 
+    // PropertyConfigurator.configure("log4j.properties");
 	
-	// Let us create an object of the Main class. 
+    // Let us create an object of the Main class. 
     Main m = new Main();
 
     logger.info(m.doIt());
