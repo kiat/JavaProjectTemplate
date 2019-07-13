@@ -4,14 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.bu.cs665</groupId>
-	<artifactId>Example-1</artifactId>
+	<artifactId>JavaProjectTemplate</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Example-1</name>
+	<name>JavaProjectTemplate</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<checkstyle.version>[8.18,)</checkstyle.version>
 		<checkstyle.plugin.version>3.1.0</checkstyle.plugin.version>
