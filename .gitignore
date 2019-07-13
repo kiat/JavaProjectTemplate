@@ -31,7 +31,12 @@ target/
 *.ear
 *.logs
 *.iml
+
 .idea/
+
 .eclipse
+
 .settings
 .project
+
+*.log
