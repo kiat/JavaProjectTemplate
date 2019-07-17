@@ -36,7 +36,7 @@ Alternativly, you can run the following command. It will generate a single jar f
 ```bash
 mvn clean compile assembly:single
 
-java -Dlog4j.configuration=file:log4j.properties -classpath target/Example-1-1.0-SNAPSHOT-jar-with-dependencies.jar edu.bu.met.cs665.Main
+java -Dlog4j.configuration=file:log4j.properties -classpath ./target/JavaProjectTemplate-1.0-SNAPSHOT-jar-with-dependencies.jar  edu.bu.met.cs665.Main
 ```
 
 
