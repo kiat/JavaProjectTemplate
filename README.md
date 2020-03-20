@@ -83,6 +83,11 @@ http://findbugs.sourceforge.net/manual/eclipse.html
 
 SpotBugs https://spotbugs.github.io/ is the spiritual successor of FindBugs.
 
+To see bug detail using the SpotBugs GUI, use the following command:
+
+```
+mvn spotbugs:gui
+```
 
 # Run Checkstyle 
 
