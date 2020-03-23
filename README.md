@@ -116,6 +116,10 @@ target/site/checkstyle.html
 
 # Generate  coveralls:report 
 
+You can find more info about coveralls 
+
+https://coveralls.io/
+
 ```bash
 mvn -DrepoToken=YOUR-REPO-TOCKEN-ON-COVERALLS  cobertura:cobertura coveralls:report
 ```
