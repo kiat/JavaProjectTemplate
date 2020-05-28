@@ -26,7 +26,7 @@ mvn clean compile assembly:single
 # How to run
 
 ```bash
-mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
+mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.Main" -Dlog4j.configuration="file:log4j.properties"
 ```
 
 We recommand the above command for running the project. 
