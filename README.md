@@ -38,8 +38,7 @@ We recommand the above command for running the Main Java executable.
 
 
 ```bash
-mvn clean compile test
-
+mvn clean compile test checkstyle:check  spotbugs:check
 ```
 
 # Using Spotbugs to find bugs in your project 
