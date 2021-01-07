@@ -29,15 +29,9 @@ mvn clean compile assembly:single
 mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
 ```
 
-We recommand the above command for running the project. 
+We recommand the above command for running the Main Java executable. 
 
-Alternativly, you can run the following command. It will generate a single jar file with all of the dependencies. 
 
-```bash
-mvn clean compile assembly:single
-
-java -Dlog4j.configuration=file:log4j.properties -classpath ./target/JavaProjectTemplate-1.0-SNAPSHOT-jar-with-dependencies.jar  edu.bu.met.cs665.Main
-```
 
 
 # Run all the unit test classes.
@@ -48,7 +42,7 @@ mvn clean compile test
 
 ```
 
-# Using Findbugs 
+# Using Spotbugs to find bugs in your project 
 
 To see bug detail using the Findbugs GUI, use the following command "mvn findbugs:gui"
 
@@ -56,29 +50,26 @@ Or you can create a XML report by using
 
 
 ```bash
-mvn findbugs:gui 
+mvn spotbugs:gui 
 ```
 
 or 
 
 
 ```bash
-mvn findbugs:findbugs
+mvn spotbugs:spotbugs
 ```
 
 
-For more info about FindBugs see 
+```bash
+mvn spotbugs:check 
+```
 
-http://findbugs.sourceforge.net/
-
-And about Maven Findbug plugin see 
-https://gleclaire.github.io/findbugs-maven-plugin/index.html
+check goal runs analysis like spotbugs goal, and make the build failed if it found any bugs. 
 
 
-You can install Findbugs Eclipse Plugin 
-
-http://findbugs.sourceforge.net/manual/eclipse.html
-
+For more info see 
+https://spotbugs.readthedocs.io/en/latest/maven.html
 
 
 SpotBugs https://spotbugs.github.io/ is the spiritual successor of FindBugs.
@@ -114,14 +105,5 @@ target/site/checkstyle.html
 ```
 
 
-# Generate  coveralls:report 
-
-You can find more info about coveralls 
-
-https://coveralls.io/
-
-```bash
-mvn -DrepoToken=YOUR-REPO-TOCKEN-ON-COVERALLS  cobertura:cobertura coveralls:report
-```
 
 
