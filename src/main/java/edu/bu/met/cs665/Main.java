@@ -25,12 +25,12 @@ public class Main {
 
     logger.info(m.doIt());
 
-    logger.trace("Trace Message!");
-    logger.debug("Debug Message!");
-    logger.info("Info Message!");
-    logger.warn("Warn Message!");
-    logger.error("Error Message!");
-    logger.fatal("Fatal Message!");
+//    logger.trace("Trace Message!");
+//    logger.debug("Debug Message!");
+//    logger.info("Info Message!");
+//    logger.warn("Warn Message!");
+//    logger.error("Error Message!");
+//    logger.fatal("Fatal Message!");
 
   }
 
