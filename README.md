@@ -26,7 +26,7 @@ mvn clean compile assembly:single
 # How to run
 
 ```bash
-mvn clean compile  exec:java -Dexec.args="WikipediaPagesOneDocPerLine.txt.bz2 300"
+mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
 ```
 
 Input file is: 
