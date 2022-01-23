@@ -59,12 +59,5 @@ public class TestAge {
   }
 
 
-  @Test
-  public void testMain() {
-
-    String[] args = {"one", "two", "three"};
-    Main.main(args);
-  }
-
 
 }
