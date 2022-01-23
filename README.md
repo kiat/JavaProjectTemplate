@@ -29,28 +29,6 @@ mvn clean compile assembly:single
 mvn -q clean compile exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
 ```
 
-Input file is: 
-
-WikipediaPagesOneDocPerLine.txt.bz2 
-
-Data line batch size is: 300
-
-You can modify the batch size based on available memory.
-
-
-If you run this over SSH and it takes a lots of time you can run it in background using the following command
-
-```bash
-nohub mvn clean compile  exec:java -Dexec.args="WikipediaPagesOneDocPerLine.txt.bz2 500"  & 
-```
-
-
-
-We recommand the above command for running the Main Java executable. 
-
-
-
-
 # Run all the unit test classes.
 
 
